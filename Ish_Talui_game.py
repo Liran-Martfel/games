@@ -13,7 +13,7 @@ NAME = ['LIRAN','DANA','LIYA','JULY','GAL','AVI','RINAT','DAN','AMIT','ATI','CHR
 
 GAME = ['CATCH','FOOTBALL','BASKETBALL','POKER','BLACKJACK','BASEBALL','GOLF','PING PONG','SOCCER','BINGO','DOMINO','MONOPOLY','HIDE AND SEEK']
 
-ALL_LISTS = CAPITAL_CITIES + FOOD + NAME
+ALL_LISTS = CAPITAL_CITIES + FOOD + NAME + GAME
 all_set = set(ALL_LISTS)
 
 selected_item = random.choice(ALL_LISTS)
@@ -26,7 +26,9 @@ elif selected_item in NAME:
 elif selected_item in CAPITAL_CITIES:
     print("YOUR CATEGORY IS CAPITAL CITIES")
     print ('*'* 40 )
-
+elif selected_item in GAME:
+    print("YOUR CATEGORY IS CAPITAL CITIES")
+    print ('*'* 40 )
 
 ALL_LISTS = selected_item
 mask_city = ('_ ' * len(ALL_LISTS))
